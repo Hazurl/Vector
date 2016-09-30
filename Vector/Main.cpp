@@ -18,13 +18,16 @@ int main()
 	std::cout << v2->toString() << std::endl << v2->normalize() << std::endl << Vector2D::getNumberOfInstance() << std::endl;
 
 	Vector3D v3(3, 5, 6);
-	Vector3D v4(v3);
-	v4.setZ(9);
+	Vector3D  * v4 = new Vector3D(v3);
+	v4->setZ(9);
 
 	delete v2;
 
 	std::cout << v3.toString() << std::endl << v3.normalize() << std::endl;
-	std::cout << v4.toString() << std::endl << v4.normalize() << std::endl << Vector2D::getNumberOfInstance() << std::endl;
+	std::cout << v4->toString() << std::endl << v4->normalize() << std::endl << Vector2D::getNumberOfInstance() << std::endl;
+
+	delete v4;
+	std::cout << Vector2D::getNumberOfInstance() << std::endl;
 
 	system("pause");
     return 0;

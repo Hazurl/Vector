@@ -1,2 +1,5 @@
 ﻿  Vector3D.cpp
+  Vector2D.cpp
+  Main.cpp
+  Generating Code...
   Vector.vcxproj -> E:\Github\Vector\Debug\Vector.exe

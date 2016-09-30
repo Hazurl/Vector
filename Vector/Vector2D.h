@@ -7,7 +7,7 @@ class Vector2D
 public:
 //:: CONSTRUCTEURS
 	Vector2D(Vector2D const& v);
-	Vector2D(int x = 0, int y = 0);
+	Vector2D(double x = 0, double y = 0);
 
 //:: DESTRUCTEURS
 	~Vector2D();
@@ -15,11 +15,11 @@ public:
 //:: GETTEURS - ACCESSEURS
 	unsigned static int getNumberOfInstance();
 
-	int getX() const;
-	int getY() const;
+	double getX() const;
+	double getY() const;
 	
-	void setX(int x);
-	void setY(int y);
+	void setX(double x);
+	void setY(double y);
 
 //:: METHODES
 	std::string toString() const;
@@ -30,8 +30,8 @@ public:
 protected:
 	static unsigned int _instance;
 
-	int _x;
-	int _y;
+	double _x;
+	double _y;
 	
 };
 
